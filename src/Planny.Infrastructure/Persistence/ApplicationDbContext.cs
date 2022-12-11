@@ -1,10 +1,11 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Planny.Application.Shared.Abstractions;
 using Planny.Domain.Entities;
 using Planny.Infrastructure.Persistence.EntityBuilders;
 
 namespace Planny.Infrastructure.Persistence;
 
-internal class ApplicationDbContext : DbContext
+internal class ApplicationDbContext : DbContext, IApplicationDbContext
 {
 
 	public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
