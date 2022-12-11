@@ -13,7 +13,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Planny.Infrastructure", "sr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Planny.Domain", "src\Planny.Domain\Planny.Domain.csproj", "{7E13CA37-AD98-4854-B59C-823A8C7557F9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Planny.WebUi", "src\Planny.WebUi\Planny.WebUi.csproj", "{C44C435D-02D7-4692-9777-7CDEE703AE42}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Planny.WebUi", "src\Planny.WebUi\Planny.WebUi.csproj", "{C44C435D-02D7-4692-9777-7CDEE703AE42}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
