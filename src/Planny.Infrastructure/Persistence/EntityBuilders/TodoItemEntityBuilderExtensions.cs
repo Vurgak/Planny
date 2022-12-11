@@ -10,6 +10,9 @@ internal static class TodoItemEntityBuilderExtensions
     {
         entityBuilder.ToTable("TodoItem");
 
+        entityBuilder.Property(p => p.Guid)
+            .HasDefaultValueSql("NEWID()");
+
         entityBuilder.Property(x => x.Title)
             .HasMaxLength(100);
 
