@@ -10,6 +10,7 @@ public static class ApplicationServiceCollectionExtensions
     {
         var executingAssembly = Assembly.GetExecutingAssembly();
 
+        services.AddAutoMapper(executingAssembly);
         services.AddMediatR(executingAssembly);
     }
 }
