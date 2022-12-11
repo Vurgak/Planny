@@ -17,7 +17,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Planny.WebUi", "src\Planny.
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{110CCAAF-E9F5-4CF2-87C7-89625F462380}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Planny.Application.UnitTests", "tests\Planny.Application.UnitTests\Planny.Application.UnitTests.csproj", "{0D5EFC5F-F793-4BF5-948D-F738BEACD0CD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Planny.Application.UnitTests", "tests\Planny.Application.UnitTests\Planny.Application.UnitTests.csproj", "{0D5EFC5F-F793-4BF5-948D-F738BEACD0CD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Planny.Infrastructure.UnitTests", "tests\Planny.Infrastructure.UnitTests\Planny.Infrastructure.UnitTests.csproj", "{D084BEF9-9BFF-48F7-ABF7-122B24A919CA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "items", "items", "{35913505-EA23-4A96-90AB-4A481185AFE4}"
+	ProjectSection(SolutionItems) = preProject
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,6 +57,10 @@ Global
 		{0D5EFC5F-F793-4BF5-948D-F738BEACD0CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0D5EFC5F-F793-4BF5-948D-F738BEACD0CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0D5EFC5F-F793-4BF5-948D-F738BEACD0CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D084BEF9-9BFF-48F7-ABF7-122B24A919CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D084BEF9-9BFF-48F7-ABF7-122B24A919CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D084BEF9-9BFF-48F7-ABF7-122B24A919CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D084BEF9-9BFF-48F7-ABF7-122B24A919CA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -60,6 +72,7 @@ Global
 		{7E13CA37-AD98-4854-B59C-823A8C7557F9} = {55FCC792-A567-4ED2-A39C-EA0992A248E4}
 		{C44C435D-02D7-4692-9777-7CDEE703AE42} = {55FCC792-A567-4ED2-A39C-EA0992A248E4}
 		{0D5EFC5F-F793-4BF5-948D-F738BEACD0CD} = {110CCAAF-E9F5-4CF2-87C7-89625F462380}
+		{D084BEF9-9BFF-48F7-ABF7-122B24A919CA} = {110CCAAF-E9F5-4CF2-87C7-89625F462380}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A316E55D-FF1C-4109-A90D-CDCF60CF3232}
