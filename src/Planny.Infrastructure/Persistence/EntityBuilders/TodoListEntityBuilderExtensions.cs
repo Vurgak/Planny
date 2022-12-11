@@ -17,5 +17,8 @@ internal static class TodoListEntityBuilderExtensions
 
         entityBuilder.Property(x => x.Name)
             .HasMaxLength(100);
+
+        entityBuilder.HasIndex(x => x.Guid)
+            .IsUnique();
     }
 }

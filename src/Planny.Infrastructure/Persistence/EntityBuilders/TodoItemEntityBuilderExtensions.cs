@@ -18,5 +18,8 @@ internal static class TodoItemEntityBuilderExtensions
 
         entityBuilder.Property(x => x.Description)
             .HasMaxLength(2000);
+
+        entityBuilder.HasIndex(x => x.Guid)
+            .IsUnique();
     }
 }
