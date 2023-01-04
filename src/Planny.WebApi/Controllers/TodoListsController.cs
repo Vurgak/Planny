@@ -1,5 +1,4 @@
-﻿using MediatR;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Planny.Application.Commands.TodoList;
 using Planny.Application.ViewModels;
 
@@ -14,5 +13,14 @@ public class TodoListsController : ApiController
     {
         var result = await Mediator.Send(command, cancellationToken);
         return result;
+    }
+
+    [HttpGet]
+    public async Task<ActionResult<IEnumerable<TodoListViewModel>>> Get(
+        [FromQuery] GetTodoListsQuery query,
+        CancellationToken cancellationToken)
+    {
+        var result = await Mediator.Send(query, cancellationToken);
+        return Ok(result);
     }
 }
